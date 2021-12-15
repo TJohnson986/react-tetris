@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Stage from './Stage';
 import Display from './Display';
 import StartButton from './StartButton';
-import { createStage } from '../gameHelpers';
+
+//styled components
 import { StyledTetrisWrapper, StyledTetris } from './styles/StyledTetris';
 
+// custom hooks
+import { usePlayer } from '../hooks/usePlayer';
+import { useStage } from '../hooks/useStage';
+
 const Tetris = () => {
+    
 
     return (
         <StyledTetrisWrapper>
